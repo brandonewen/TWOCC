@@ -1,0 +1,569 @@
+/* 
+Author: Brandon
+Date: 7/05/2024
+Version: Week 11
+*/
+
+/*
+COLOURS
+#211d1c - dark brown (for text)
+#2f261d - brown
+#225c71 - dark teal
+#c62d03 - burnt red
+#EEE9D9 - beige
+#ffffff - white
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*GLOBAL STYLES
+----------------------------------------
+*/
+
+body {
+	font-size: 16px;
+	font-weight: 300;
+	font-family: 'DM Sans', sans-serif;
+	color: #ffffff;
+	margin: 0;
+	background-color: #211d1c;
+}
+
+#wrapper {
+	position: relative;
+	max-width: 1500px;
+	margin: 0, auto;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2.8em;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+a {
+	color: #225c71; /* dark teal */
+}
+a:visited {
+	color: #c62d03; /* burnt red */
+}
+
+
+/* HEADER
+----------------------------------------
+*/
+
+header {
+	background: #211d1c url(_images/stouts.jpg) no-repeat top center/cover;
+	height: 300px;
+	width: 1500px;
+	color: #ffffff;	
+}
+
+header h1 {
+	visibility: hidden;
+}
+
+header img {
+	position: relative;
+	top: 10px; left: 20px; bottom: 10px;
+	z-index: 999;
+}
+
+
+/* NAVIGATION
+----------------------------------------
+*/
+
+nav {
+	background-color:#211d1c;
+	position: absolute;
+	top: 0px; left: 0px;
+	width: 100%; /* = 1200px */
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	opacity: 0.80;
+}
+
+nav ul {
+	padding-left: 50px;
+	padding-right: 50px;
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	color: #ffffff; /* white */
+	text-decoration: none;
+	padding: 10px 20px 10px 20px;
+}
+
+nav a:visited {
+	color: #ffffff; /* white */
+}
+
+nav a:hover {
+	background-color: #356d81; /* dark teal */
+}
+
+nav span {
+	padding: 10px 20px 10px 20px;
+	background-color: #356d81; /* dark teal */
+	color: #ffffff; /* white */
+}
+
+/* INDEX PAGE --- */
+
+/* CONTACT US --- */
+
+#contacthead {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+/* LEARNT CSS STYLING FOR FORMS FROM W3SCHOOLS --- */
+.contact-sheet {
+	justify-content: center;
+	text-align: center;
+	color:white;
+	font-weight:500;
+	font-size: 18px;
+	line-height: 22px;
+	background-color: transparent;
+	border:2px solid #ffffff;
+	transition: all 0.3s;
+	padding: 12px;
+	margin-bottom: 15px;
+	width: 80%;
+	box-sizing: border-box;
+	outline:0;
+	margin-left: 150px;
+  }
+  
+  .contact-sheet:focus { border:2px solid #225c71; }
+  
+  textarea {
+	height: 150px;
+	line-height: 150%;
+	resize: none;
+  }
+  
+  [type="submit"] {
+	width: 500px;
+	background: #225c71;
+	border:0;
+	cursor:pointer;
+	color:white;
+	font-size:24px;
+	padding-top:10px;
+	padding-bottom:10px;
+	transition: all 0.3s;
+	margin-top:-4px;
+	font-weight:700;
+	margin-left: 500px;
+  }
+
+  [type="submit"]:hover { background:#356d81; }
+
+/* CRAFT SYLES CONTENT --- */
+
+#headings0 {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#content0 {
+    display: flex;
+    margin: 10px 0;
+    text-align: center;
+	justify-content: space-around;
+	/* space around learnt from w3 schools */
+	padding: 10px 15px 10px 15px;
+	flex-wrap: wrap;
+	text-wrap: wrap;
+}
+
+#content0 section {
+	padding: 20px 10px 10px;
+}
+
+#content0 a {
+	color: #211d1c;
+	text-decoration: none;
+}
+
+#content0 a:visited {
+	color: #211d1c;
+	text-decoration: none;
+}
+
+#content0 a:hover {
+	color: #356d81;
+}
+
+#ipa {
+	background-color: #ffffff;
+	color: #211d1c;
+	width: 320px;
+}
+
+#paleale {
+	background-color: #ffffff;
+	color: #211d1c;
+	width: 320px;
+}
+
+#sours {
+	background-color: #ffffff;
+	color: #211d1c;
+	width: 320px;
+}
+
+#lagers {
+	background-color: #ffffff;
+	color: #211d1c;
+	width: 320px;
+}
+
+/* IPA --- CONTENT */
+
+#headings1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	text-wrap: wrap;
+	margin: auto 300px auto 300px;
+	padding: 0 15px 10px 15px;
+}
+
+#content1 {
+    display: flex;
+    margin: 10px 0;
+    text-align: center;
+	justify-content: space-around;
+	/* space around learnt from w3 schools */
+	padding: 10px 15px 10px 15px;
+	flex-wrap: wrap;
+	text-wrap: wrap;
+}
+
+#content1 section {
+	padding: 20px 10px 10px;
+}
+
+#content1 a {
+	color: #211d1c;
+	text-decoration: none;
+}
+
+#content1 a:visited {
+	color: #211d1c;
+	text-decoration: none;
+}
+
+#content1 a:hover {
+	color: #356d81; /* dark teal */
+	z-index: 999;
+}
+
+#englishipa {
+	background-color: #ffffff;
+	color: #211d1c;
+	width: 320px;
+}
+
+#iipa {
+	background-color: #ffffff;
+	color: #211d1c;
+	width: 320px;
+}
+
+#neipa {
+	background-color: #ffffff;
+	color: #211d1c;
+	width: 320px;
+}
+
+#usipa {
+	background-color: #ffffff;
+	color: #211d1c;
+	width: 320px;
+}
+
+/* ENGLISH IPA --- CONTENT */
+
+#headings2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	text-wrap: wrap;
+	padding: 10px 15px 10px 15px;
+	background-color: #ffffff;
+	color: #211d1c;
+	margin: 20px 50px;
+}
+
+#headings2 section {
+	margin: 20px 50px;
+}
+
+#headings2 h4 {
+	padding: 110px 10px 5px 10px;
+}
+
+#content2 {
+	margin: auto 50px auto 50px;
+}
+
+#content2 table, th, td {
+	padding: 10px 10px;
+	border-collapse: collapse;
+	border: 1px solid #ffffff;
+	margin: 20px 0;
+}
+
+#content2 td {
+	text-align: left;
+}
+
+/* IIPA --- */
+
+#headings5 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	text-wrap: wrap;
+	padding: 10px 15px 10px 15px;
+	background-color: #ffffff;
+	color: #211d1c;
+	margin: 20px 50px;
+}
+
+#headings5 section {
+	margin: 20px 50px;
+}
+
+#headings5 h4 {
+	padding: 110px 10px 5px 10px;
+}
+
+#content5 {
+	margin: auto 50px auto 50px;
+}
+
+#content5 table, th, td {
+	padding: 10px 10px;
+	border-collapse: collapse;
+	border: 1px solid #ffffff;
+	margin: 20px 0;
+}
+
+#content5 td {
+	text-align: left;
+}
+
+/* NEIPA --- */
+
+#headings6 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	text-wrap: wrap;
+	padding: 10px 15px 10px 15px;
+	background-color: #ffffff;
+	color: #211d1c;
+	margin: 20px 50px;
+}
+
+#headings6 section {
+	margin: 20px 50px;
+}
+
+#headings6 h4 {
+	padding: 110px 10px 5px 10px;
+}
+
+#content6 {
+	margin: auto 50px auto 50px;
+}
+
+#content6 table, th, td {
+	padding: 10px 10px;
+	border-collapse: collapse;
+	border: 1px solid #ffffff;
+	margin: 20px 0;
+}
+
+#content6 td {
+	text-align: left;
+}
+
+/* US IPA --- */
+
+#headings7 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	text-wrap: wrap;
+	padding: 10px 15px 10px 15px;
+	background-color: #ffffff;
+	color: #211d1c;
+	margin: 20px 50px;
+}
+
+#headings7 section {
+	margin: 20px 50px;
+}
+
+#headings7 h4 {
+	padding: 110px 10px 5px 10px;
+}
+
+#content7 {
+	margin: auto 50px auto 50px;
+}
+
+#content7 table, th, td {
+	padding: 10px 10px;
+	border-collapse: collapse;
+	border: 1px solid #ffffff;
+	margin: 20px 0;
+}
+
+#content7 td {
+	text-align: left;
+}
+
+/* ABOUT.HTML --- */
+
+#headings3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	text-wrap: center;
+}
+
+#content3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	text-wrap: center;
+	padding: 0 150px 0 150px;
+}
+
+#content3 section {
+	padding: 20px 25px;
+	background-color: #ffffff;
+	color: #211d1c;
+	text-wrap: center;
+	line-height: 1.5;
+}
+
+#content4 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	text-wrap: center;
+	padding: 0 75px 0 75px;
+	margin: 80px;
+}
+
+#content4 section {
+	padding: 20px 25px;
+	background-color: #ffffff;
+	color: #211d1c;
+	text-wrap: center;
+	line-height: 1.5;
+	
+}
+
+/* FOOTER --- */
+
+footer {
+	font-size: 0.8em;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+
+footer li {
+	list-style: none;
+	padding-right: 20px;
+	padding-top: 550px;
+}
+
+/* MEDIA QUERIES --- */
+
+@media screen and (max-width: 1000px) {
+	#wrapper {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	header {
+		background: url(_images/stouts.jpg);
+		height: 300px
+	}
+
+	header img {
+		width: auto; height: auto;
+	}
+
+	nav {
+		padding-top: 50px;
+	}
+
+	nav ul {
+		padding: 10px 5px
+	}
+}
+
+@media screen and (max-width: 700px) {
+	header {
+		background: url(_images/stouts.jpg);
+		height: 300px
+	}
+
+	header img {
+		width: auto; height: auto;
+	}
+
+	nav {
+		padding-top: 50px;
+		display: inline-block;
+	}
+
+	nav ul {
+		padding: 10px 50px;
+	}
+
+	nav a:hover {
+		background-color: transparent;
+		color: #225c71;
+	}
+}
